@@ -4,6 +4,13 @@
     <head>
         <title> Pirates of the Caribbean</title>
         <style>
+
+            @font-face { 
+                font-family: Pirates; 
+                src: url('Pirates.ttf'); 
+            }
+
+
             ul {
                 list-style-type: none;
                 margin: 0;
@@ -35,7 +42,7 @@
             }
 
             p {
-                font-family: 'Courier New', Courier, monospace;
+                font-family:'Courier New', Courier, monospace;
                 text-align: center;
             }
 
@@ -46,14 +53,19 @@
             }
 
             body {
-                background-color: bisque;
+                background-color:white;
             }
 
         </style>
     </head>
 
     <body>
-        <h1> Pirates of the Caribbean</h1>
+        
+        <picture>
+            <source media="(min-width:650px)" srcset="logo.png">
+            <img src="logo.png" alt="Pirates of the Caribbean" style="width:auto;" class="center">
+         </picture>
+ 
 
         <ul>
             <li><a href="MHK.html">Mustan helmen kirous</a></li>
@@ -74,10 +86,6 @@
             Eum no molestiae voluptatibus.
         </p>
 
-        <picture>
-           <source media="(min-width:650px)" srcset="logo.png">
-           <img src="logo.png" alt="Logo" style="width:auto;" class="center">
-        </picture>
 
     </body>
 
