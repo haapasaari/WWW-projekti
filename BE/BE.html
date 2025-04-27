@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Billie Eilish</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+        
+        /* Uuden fontin lisäys */
+        @font-face {
+            font-family: 'BE';
+            src: url('BE.otf');
+        }
+
+        body {
+            background-color: rgb(12, 14, 145);
+            background-image: url('kuvat/be5.jpg'); /* Kuvan lähde: https://www.choosechicago.com/event/billie-eilish-hit-me-hard-and-soft-the-tour/  */
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: auto;
+            background-position: top center;
+            margin: 20px; 
+            height: 100vh;
+        }
+        
+        /* Otsikko ja sen tyyli */
+        .header {
+            padding: 60px;
+            text-align: center;
+            background-color: rgba(12, 14, 145, 0.5);
+            color: white;
+            font-size: 30px;
+            font-family:BE;
+        }
+
+        /* Navigointivalikon luominen */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(12, 14, 145, 0.5);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 100px;
+        }
+
+        li {
+            float: left;
+        }
+
+        /* Valikon linkkien asetukset */
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: BE;
+        }
+
+        li a:hover {
+            background-color: rgb(50, 52, 146);
+        }
+
+        /* Tehdään sivustosta myös versio mobiililaitteelle */
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll;
+                background-position: center top; 
+                background-size: auto;
+                background-repeat: no-repeat;
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            li {
+                width: 100%;
+            }
+
+            li a {
+                padding: 10px;
+            }
+
+        }
+
+        h3 {
+            font-family: BE;
+            color: white;
+            text-align: center;
+            background-color: rgba(12, 14, 145, 0.5);
+        }
+
+        p {
+            font-family: BE;
+            color: white;
+            text-align: center;
+            background-color: rgba(12, 14, 145, 0.5);
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="header">
+            <h1>Billie Eilish</h1>
+        </div>
+
+        <ul>
+            <li><a href="Info.html">Info</a></li>
+            <li><a href="Julkaisut.html">Julkaisut</a></li>
+            <li><a href="Kuvat.html">Kuvagalleria</a></li>
+        </ul>
+
+        <h3>Tervetuoa nettisivulle!</h3>
+
+        <p>
+            Tältä sivustolta löydät tietoa Billie Eilishista. 
+        </p>
+
+        <p>
+            Info-kohdasta löydät yleistä tietoa artistista. <br>
+            Julkaisut-kohdastla löydät kaikki Billie Eilishin julkaisut. <br>
+            Kuvagalleriasta löydät lisää kuvia.
+        </p>
+    </body>
+
+</html>

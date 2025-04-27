@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Billie Eilish</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+        
+        /* Uuden fontin lisäys */
+        @font-face {
+            font-family: 'BE';
+            src: url('BE.otf');
+        }
+
+        body {
+            background-color: rgb(12, 14, 145);
+            background-image: url(kuvat/tausta3.png); 
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: auto;
+            background-position: top center;
+            margin: 20px; 
+            height: 100vh; 
+        }
+
+        figure {
+            border:2px white;
+            padding: 4px;
+            margin: auto;
+            text-align: center;
+        }
+
+        figcaption {
+            color: white;
+            font-family: BE;
+            padding: 2px;
+            text-align: center;
+        }
+        
+        /* Otsikko ja sen tyyli */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background-color: rgba(12, 14, 145, 0.1);
+            color: white;
+            font-size: 15px;
+            font-family:BE;
+        }
+
+        /* Navigointivalikon luominen */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(12, 14, 145, 0.1);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 100px;
+        }
+
+        li {
+            float: left;
+        }
+
+        /* Valikon linkkien asetukset */
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: BE;
+        }
+
+        li a:hover {
+            background-color: rgb(50, 52, 146);
+        }
+
+        .styled-link {
+            text-decoration: none;
+            color: white;
+            font-family: BE;
+            font-size: 10px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll;
+                background-position: center top; 
+                background-size: auto;
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            li {
+                width: 100%;
+            }
+
+            li a {
+                padding: 10px;
+            }
+
+        }
+
+        h3 {
+            font-family: BE;
+            color: white;
+            text-align: center;
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="header">
+            <h1>Kuvagalleria</h1>
+        </div>
+
+        <ul>
+            <li><a href="BE.html">Etusivu</a></li>
+            <li><a href="Info.html">Info</a></li>
+            <li><a href="Julkaisut.html">Julkaisut</a></li>
+        </ul>
+
+        <h3>Billie Eilish</h3>
+
+        <figure>
+            <img src="kuvat/be7.webp" alt="Billie Eilish 1." style="width:300px">
+            <figcaption><a href="https://billieeilish.fandom.com/wiki/Billie_Eilish" class="styled-link">Kuvan lähde</a> </figcaption>
+        </figure>
+
+        <figure>
+            <img src="kuvat/be8.webp" alt="Billie Eilish 2." style="width:300px"> 
+            <figcaption><a href="https://billieeilish.fandom.com/wiki/Billie_Eilish" class="styled-link">Kuvan lähde</a> </figcaption>
+        </figure>
+
+        <figure>
+            <img src="kuvat/be9.webp" alt="Billie Eilish 3." style="width:300px"> <!-- Lähde: https://www.latimes.com/entertainment-arts/awards/story/2023-11-14/billie-eilish-what-was-i-made-for-barbie-greta-gerwig -->
+            <figcaption><a href="https://www.latimes.com/entertainment-arts/awards/story/2023-11-14/billie-eilish-what-was-i-made-for-barbie-greta-gerwig" class="styled-link">Kuvan lähde</a> </figcaption>
+        </figure>
+
+        <h3> Kiertuekuvia </h3>
+
+        <figure>
+            <img src="kuvat/be10.jpg" alt="Kiertue 1." style="width:300px"> <!-- Lähde: https://www.nytimes.com/2024/09/30/arts/music/billie-eilish-hit-me-hard-and-soft-tour-review.html -->
+            <figcaption><a href="https://www.nytimes.com/2024/09/30/arts/music/billie-eilish-hit-me-hard-and-soft-tour-review.html" class="styled-link">Kuvan lähde</a> </figcaption>
+        </figure>
+
+        <figure>
+            <img src="kuvat/be11.webp" alt="Kiertue 2." style="width:300px"> <!-- Lähde: https://momentfactory.com/products/billie-eilish-hit-me-hard-and-soft-the-tour -->
+            <figcaption><a href="https://momentfactory.com/products/billie-eilish-hit-me-hard-and-soft-the-tour" class="styled-link">Kuvan lähde</a> </figcaption>
+        </figure>
+
+        <figure>
+            <img src="kuvat/be12.jpg" alt="Kiertue 3." style="width:300px"> <!-- Lähde: https://www.seattlemusicnews.com/2024/12/07/billie-eilish-hit-me-hard-and-soft-seattle/ -->
+            <figcaption><a href="https://www.seattlemusicnews.com/2024/12/07/billie-eilish-hit-me-hard-and-soft-seattle/" class="styled-link">Kuvan lähde</a> </figcaption>
+        </figure>
+
+    </body>
+
+</html>

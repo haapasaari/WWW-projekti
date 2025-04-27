@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Billie Eilish</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+        
+        /* Uuden fontin lisäys */
+        @font-face {
+            font-family: 'BE';
+            src: url('BE.otf');
+        }
+
+        /* Näkymä yleisesti */
+        body {
+            background-color: rgb(12, 14, 145);
+            background-image: url('kuvat/be3.webp'); /* Kuvan lähde: https://shop.umusic.com.au/pages/artist/billie-eilish */
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: auto;
+            background-position: top center;
+            margin: 0; 
+            height: 100vh;
+        }
+        
+        /* Otsikko ja sen tyyli */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background-color: rgba(12, 14, 145, 0.350);
+            color: white;
+            font-size: 30px;
+            font-family:BE;
+        }
+
+        /* Navigointivalikon luominen */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(12, 14, 145, 0.350);
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            float: left;
+        }
+
+        /* Valikon linkkien asetukset */
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: BE;
+        }
+
+        li a:hover {
+            background-color: rgb(50, 52, 146);
+        }
+
+        .text-container {
+            background-color: rgba(12, 14, 145, 0.350);
+            color: white;
+            font-family: BE;
+            text-align: center;
+            padding: 60;
+        }
+
+        h2 {
+            font-family: BE;
+            color: white;
+            text-align: center;
+        }
+
+        /* Näkymä mobiililaitteella */
+        @media (max-width: 768px) {
+            body {
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-position: bottom;
+                background-size: center center;
+                height: 100vh;
+                margin: 0;
+                min-height: 100vh;
+
+            }
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            li {
+                width: 100%;
+            }
+
+            li a {
+                padding: 10px;
+            }
+
+        }
+
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="header">
+            <h1>Info</h1>
+            <p>Billie Eilish</p>
+        </div>
+
+        <ul>
+            <li><a href="BE.html">Etusivu</a></li>
+            <li><a href="Julkaisut.html">Julkaisut</a></li>
+            <li><a href="Kuvat.html">Kuvagalleria</a></li>
+        </ul>
+
+        <div class="text-container">
+            <h2>Tietoa artistista</h2>
+
+            <p> 
+                Billie Eilish Pirate Baird O'Connell on yhdysvaltalainen laulaja ja lauluntekijä. <br>
+                18.12.2001 Kaliforniassa syntynyt Billie aloitti uransa vuonna 2015 julkaisemalla kappaleita veljensä Finneaksen kanssa. <br>
+            </p>
+
+            <p>
+                Billie Eilish on voittanut uransa aikana yhteensä 7 Grammy-palkintoa. <br>
+                Näiden lisäksi hän on voittanut muita palkintoja eri gaaloissa, kuten MTV Video Music Awards, American Music Awards ja Brit Awards.
+            </p>
+        </div>
+
+    </body>
+
+
+</html>
