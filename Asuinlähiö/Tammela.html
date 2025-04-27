@@ -3,18 +3,238 @@
 
     <head>
         <title>Tammela</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+
+            /* Uuden fontin lisäys */
+            @font-face {
+            font-family: 'fontti';
+            src: url('fontti.ttf');
+            }
+
+            body {
+                background-color: darkolivegreen;
+            }
+
+            /*Kuvien lisäys siten, että mukana tulee kuvateksti*/
+            figure {
+                border:2px white;
+                padding: 4px;
+                margin: 10px;
+                text-align: center;
+                display: inline-block;
+            }
+
+            /*Kuvatekstin asetukset*/
+            figcaption {
+                color: white;
+                font-family: fontti;
+                margin-top: 5px;
+                text-align: center;
+                display: none;
+            }
+
+            /* Kuvien suurentuminen hiiren ollessa siinä päällä */
+
+            img {
+                transition: transform 0.3s ease;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+            }
+
+            /* Otsikko ja sen tyyli */
+            .header {
+                padding: 30px;
+                text-align: center;
+                background-color: darkolivegreen;
+                color: white;
+                font-size: 30px;
+                font-family: fontti;
+            }
+
+
+            h3 {
+                color: white;
+                font-family: fontti;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            p {
+                color: white;
+                font-family: fontti;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            /* Linkkien asetukset */
+            .styled-link {
+            text-decoration: none;
+            color:darkseagreen;
+            font-family: fontti;
+        }
+
+        </style>
     </head>
 
     <body>
-        <h1>Tammela</h1>
+        <div class="header">
+            <h1> Tammela </h1>
+        </div>
 
-        <h3> Yleistä tietoa</h3>
-        <p> 
-            Tammela on yksi Tampereen kaupunginosista ja se sijaitsee aivan Tampereen keskustan läheisyydessä.
-            Tammela on tunnettu esimerkiksi siellä sijaitsevasta Tammelantorista ja juuri valmistuneesta Tammelan Stadionista.
+        <div style="background-color: rgb(71, 89, 40); padding: 20px; border-radius: 10px;">
+            <h3> Yleistä tietoa</h3>
+            <p>
+                Tammela on yksi Tampereen kaupunginosista ja se sijaitsee aivan Tampereen keskustan läheisyydessä. <br>
+                Tammela on tunnettu esimerkiksi siellä sijaitsevasta Tammelantorista ja juuri valmistuneesta Tammelan Stadionista.
+            </p>
+        </div>
+        <p>
+            Kuvia klikkaamalla näet niiden kuvauksen!
         </p>
 
-        <img src="stadion.jpg" >
+        <div style="text-align: center;">
+
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="stadion.jpg" alt="Tammelan Stadion" style="height:200px" onclick="showCaption(this)">
+                <figcaption>Tammelan Stadion</a> </figcaption>
+            </figure>
+
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="Tammelantori.jpg" alt="Tammelantori" style="height: 200px" onclick="showCaption(this)">
+                <figcaption>Tammelantori</figcaption>
+            </figure>
+
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="EApuisto.jpg" alt="Emil Aaltosen puisto" style="height: 200px" onclick="showCaption(this)">
+                <figcaption>Emil Aaltosen Puisto</figcaption>
+            </figure>
+
+        </div>
+
+        <div style="background-color: rgb(71, 89, 40); padding: 20px; border-radius: 10px;">
+            <h3> Tammelan kaupat </h3>
+
+            <p>
+                Vaikka Tammela on melko pieni alue, on siellä laaja valikoima eri kauppoja. <br>
+                <a href="https://www.k-ruoka.fi/kauppa/k-market-mestari" class="styled-link">K-market Mestari</a> ja
+                <a href="https://www.k-ruoka.fi/kauppa/k-market-vellamonkatu" class="styled-link">K-market Vellamonkatu</a>
+                sijaitsevat aivan Tammelantorin läheisyydessä.
+            </p>
+
+            <p>
+                Hieman Tammelantorista pohjoiseen sijaitsevat
+                <a href="https://www.k-ruoka.fi/kauppa/k-market-kullervonkatu" class="styled-link">K-market Kullervonkatu</a> ja
+                <a href="https://www.s-kanava.fi/toimipaikka/sale-osmonmaki-tampere/514575182" class="styled-link">Sale Osmonmäki</a>.
+            </p>
+
+            <p>
+                Uuden stdionin yhteydessä on
+                <a href="https://www.k-ruoka.fi/kauppa/k-supermarket-tammelan-stadion" class="styled-link">K-supermarket Tammelan Stadion</a>.
+            </p>
+
+            <p>
+                Tammelan läheisyydessä sijaitsevat myös
+                <a href="https://www.s-kaupat.fi/myymala/s-market-pendoliino/542868161" class="styled-link">S-market Pendolino</a> ja
+                <a href="https://www.lidl.fi/s/fi-FI/myym%C3%A4l%C3%A4t/tampere/rautatienkatu-21/" class="styled-link">Lidl Rautatienkatu</a>.
+            </p>
+
+            <h3> Tammelan ravintolat ja kahvilat </h3>
+
+            <p>
+                Monien ruokakauppojen lisäksi Tammelassa on laajalti erilaisia ravintoloita ja kahviloita.
+                Etenkin kesäisin jo pelkästään Tammelantorilta löytää jo monenmonta erilaista vaihtoehtoa.
+            </p>
+
+            <p>
+                Tammelantorilla voit syödä esimerkiksi
+                <a href="https://www.tapola.fi/torit/" class="styled-link">Tapolan mustaamakkaraa</a> sekä
+                <a href="https://curry510.com/" class="styled-link">Saksalaista currywurstia</a>
+                tai juoda kahvit
+                <a href="https://eat.fi/fi/tampere/kahvikeidas-tammelantori" class="styled-link">Kahvikeitaalla</a>.
+            </p>
+
+            <p>
+                Muita hyviä Tammelan ravintoloita on esimerkiksi
+                <a href="https://purebite.fi/" class="styled-link">ravintola Purebite</a> ja
+                <a href="https://www.facebook.com/TOKINUKI.Tampere/?locale=fi_FI" class="styled-link">Toki Nuki</a>.
+            </p>
+
+            <p>
+                Pikaruokaa Tammelassa tarjoilevat
+                <a href="https://www.hesburger.fi/ravintolat?tid=149" class="styled-link">Hesburger</a>,
+                <a href="https://www.kotipizza.fi/ravintolat/tampere-tammela-kullervonkatu" class="styled-link">Kotipizza</a> sekä pizzeriat
+                <a href="https://www.mardinpizzeria.fi/" class="styled-link">Mardin</a> ja
+                <a href="https://latoorepizza.fi/" class="styled-link">La Toore</a>.
+            </p>
+
+        </div>
+
+        <div style="text-align: center;">
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="Curry.jpeg" alt="Curry 510" style="height: 200px" onclick="showCaption(this)"> <!--Kuva itse otettu-->
+                <figcaption>Curry 510</figcaption>
+            </figure>
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="vellamonkatu.jpg" alt="K-market Vellamonkatu" style="height: 200px;" onclick="showCaption(this)">
+                <figcaption>K-market Vellamonkatu</figcaption>
+            </figure>
+        </div>
+
+        <h3>Kuvagalleria</h3>
+
+        <div style="text-align: center;"> <!--Kaikki kuvat itseotettuja-->
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="kuva2.jpeg" alt="Tammelantori" style="height: 300px" onclick="showCaption(this)"> <!--Kuva itse otettu-->
+                <figcaption>Tammelantori</figcaption>
+            </figure>
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="kuva3.jpg" alt="Pinnikatu" style="height: 300px" onclick="showCaption(this)"> <!--Kuva itse otettu-->
+                <figcaption>Pinnikatu</figcaption>
+            </figure>
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="kuva4.jpg" alt="Emil Aaltosen puisto" style="height: 300px" onclick="showCaption(this)"> <!--Kuva itse otettu-->
+                <figcaption>Tammelantori Emil Aaltosen puistosta katsottuna</figcaption>
+            </figure>
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="kuva5.jpg" alt="Emil Aaltosen muistomerkki" style="height: 300px" onclick="showCaption(this)"> <!--Kuva itse otettu-->
+                <figcaption>Emil Aaltosen muistomerkki</figcaption>
+            </figure>
+        </div>
+
+        <div style="text-align: center;"> <!--Kaikki kuvat itseotettuja-->
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="kuva6.jpg" alt="Tammelan Voiman talo" style="height: 300px" onclick="showCaption(this)"> <!--Kuva itse otettu-->
+                <figcaption>Tammelan Voiman talo ja Pub Vanha Mestari</figcaption>
+            </figure>
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="kuva7.jpg" alt="Aaltosenkatu" style="height: 300px" onclick="showCaption(this)"> <!--Kuva itse otettu-->
+                <figcaption>Aaltosenkatu ja K-market Mestari</figcaption>
+            </figure>
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="kuva8.jpg" alt="Ilmarinkatu" style="height: 300px" onclick="showCaption(this)"> <!--Kuva itse otettu-->
+                <figcaption>Ilmarinkatu</figcaption>
+            </figure>
+            <figure style="display: inline-block; margin: 10px;">
+                <img src="kuva9.jpg" alt="Tammelantori" style="height: 300px" onclick="showCaption(this)"> <!--Kuva itse otettu-->
+                <figcaption>Tammelantori</figcaption>
+            </figure>
+
+
+        <script>
+            function showCaption(img) {
+                const figcaption = img.parentElement.querySelector('figcaption');
+                if (figcaption.style.display == 'none' || figcaption.style.display === '') {
+                    figcaption.style.display = 'block';
+                } else {
+                    figcaption.style.display = 'none';
+                }
+            }
+        </script>
 
     </body>
 
